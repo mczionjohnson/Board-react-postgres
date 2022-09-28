@@ -1,5 +1,6 @@
-import React from "react";
+// import React from "react";
 import { useNavigate } from "react-router-dom"
+import { Form, Button } from "react-bootstrap";
 
 
 function CreatePost() {
@@ -7,7 +8,8 @@ function CreatePost() {
     const navigate = useNavigate();
     return (
         <>
-        <h1>Create Post with Forms</h1>
+        <h1>Create Post</h1>
+        
 
         <button onClick={ () => navigate("/post") }> Back </button>
 

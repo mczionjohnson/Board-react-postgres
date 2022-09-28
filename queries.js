@@ -17,13 +17,14 @@ const getPosts = (req, res) => {
         // res.send("Hello Insomnia 2");
 
         const objects = results.rows;
-        const testid = 1;
+        // const testid = 1;
 
-        const { team, event } = objects.find(object => object.id === testid);
+        // const { team, event } = objects.find(object => object.id === testid);
 
-        console.log(team, event);
+        // console.log(team, event);
         // return;
-        res.status(200).json(team);
+        res.status(200).json(objects);
+        console.log(objects);
         return;
 
     });

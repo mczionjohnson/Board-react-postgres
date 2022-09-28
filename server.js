@@ -16,10 +16,10 @@ app.use(cors());
 
 const db = require('./queries')
 
-// app.get('/', (req, res) => {
-//     res.send("Hello Insomnia")
-// })
+app.get('/', (req, res) => {
+    res.send("Hello Insomnia")
+})
 
-app.get('/', db.getPosts)
+app.get('/posts', db.getPosts)
 
 app.listen(process.env.PORT || 5000, () => console.log("express is running"));
